@@ -1,0 +1,31 @@
+.container {
+  width: 60%;
+  height: 60%;
+}
+
+
+.calendar {
+  color: #fff;
+}
+
+.headersCalendar {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.coupons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  // height: 100%;
+  color: #fff;
+}
+
+.couponStyle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}

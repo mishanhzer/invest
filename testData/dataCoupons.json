@@ -1,0 +1,152 @@
+[
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2023-02-04T00:00:00Z",
+    "couponNumber": "1",
+    "fixDate": "2023-02-03T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "61",
+      "nano": 860000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2022-07-07T00:00:00Z",
+    "couponEndDate": "2023-02-04T00:00:00Z",
+    "couponPeriod": 212
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2023-08-05T00:00:00Z",
+    "couponNumber": "2",
+    "fixDate": "2023-08-04T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2023-02-04T00:00:00Z",
+    "couponEndDate": "2023-08-05T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2024-02-03T00:00:00Z",
+    "couponNumber": "3",
+    "fixDate": "2024-02-02T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2023-08-05T00:00:00Z",
+    "couponEndDate": "2024-02-03T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2024-08-03T00:00:00Z",
+    "couponNumber": "4",
+    "fixDate": "2024-08-02T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2024-02-03T00:00:00Z",
+    "couponEndDate": "2024-08-03T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2025-02-01T00:00:00Z",
+    "couponNumber": "5",
+    "fixDate": "2025-01-31T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2024-08-03T00:00:00Z",
+    "couponEndDate": "2025-02-01T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2025-08-02T00:00:00Z",
+    "couponNumber": "6",
+    "fixDate": "2025-08-01T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2025-02-01T00:00:00Z",
+    "couponEndDate": "2025-08-02T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2026-01-31T00:00:00Z",
+    "couponNumber": "7",
+    "fixDate": "2026-01-30T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2025-08-02T00:00:00Z",
+    "couponEndDate": "2026-01-31T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2026-08-01T00:00:00Z",
+    "couponNumber": "8",
+    "fixDate": "2026-07-31T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2026-01-31T00:00:00Z",
+    "couponEndDate": "2026-08-01T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2027-01-30T00:00:00Z",
+    "couponNumber": "9",
+    "fixDate": "2027-01-29T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "53",
+      "nano": 100000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2026-08-01T00:00:00Z",
+    "couponEndDate": "2027-01-30T00:00:00Z",
+    "couponPeriod": 182
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "couponDate": "2027-07-01T00:00:00Z",
+    "couponNumber": "10",
+    "fixDate": "2027-06-30T00:00:00Z",
+    "payOneBond": {
+      "currency": "rub",
+      "units": "44",
+      "nano": 350000000
+    },
+    "couponType": "COUPON_TYPE_FIX",
+    "couponStartDate": "2027-01-30T00:00:00Z",
+    "couponEndDate": "2027-07-01T00:00:00Z",
+    "couponPeriod": 152
+  }
+]

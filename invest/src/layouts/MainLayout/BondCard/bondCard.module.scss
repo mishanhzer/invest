@@ -1,0 +1,36 @@
+.container {
+  width: 60vw;
+  height: 80vh;
+  margin: 25px auto 0 auto;
+}
+
+.header {
+  position: relative;
+  height: 30%;
+  padding: 15px 30px;
+  background-color: rgb(12, 174, 106);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.headerTop {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  color: #fff;
+  // margin: 5px 0 0 30px;
+}
+
+.nameBond {
+  color: #fff;
+}
+
+.navigate {
+  display: flex;
+  position: absolute;
+  // margin-left: 15px;
+  justify-content: space-between;
+  color: #fff;
+  width: 15%;
+  bottom: 15px;
+}
