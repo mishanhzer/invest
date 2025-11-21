@@ -1,0 +1,1 @@
+{"version":3,"file":"trades.d.ts","sourceRoot":"","sources":["../../src/stream/trades.ts"],"names":[],"mappings":"AAAA;;;GAGG;AACH,OAAO,EAAE,UAAU,EAAE,MAAM,WAAW,CAAC;AACvC,OAAO,EAAE,mBAAmB,EAAE,oBAAoB,EAAE,MAAM,wBAAwB,CAAC;AAEnF,qBAAa,YAAa,SAAQ,UAAU,CAAC,mBAAmB,EAAE,oBAAoB,CAAC;IACrF;;OAEG;IACH,KAAK,CAAC,OAAO,EAAE,mBAAmB;CAOnC"}

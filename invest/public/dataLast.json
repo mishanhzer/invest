@@ -1,0 +1,38 @@
+[
+  {
+    "figi": "",
+    "price": {
+      "units": "76",
+      "nano": 630000000
+    },
+    "time": "2025-11-14T12:16:03.278367509Z",
+    "ticker": "TT625CW5",
+    "classCode": "SPBOPT",
+    "instrumentUid": "58d32973-f99a-4fc7-9521-486b2614d717",
+    "lastPriceType": "LAST_PRICE_EXCHANGE"
+  },
+  {
+    "figi": "FUTALUM12250",
+    "price": {
+      "units": "2847",
+      "nano": 0
+    },
+    "time": "2025-11-15T15:43:41.026136616Z",
+    "ticker": "ANZ5",
+    "classCode": "SPBFUT",
+    "instrumentUid": "6cff1b08-9daa-4821-b923-fcf44970ed92",
+    "lastPriceType": "LAST_PRICE_EXCHANGE"
+  },
+  {
+    "figi": "TCS00A104XR2",
+    "price": {
+      "units": "94",
+      "nano": 810000000
+    },
+    "time": "2025-11-14T18:06:26.195508Z",
+    "ticker": "RU000A104XR2",
+    "classCode": "TQCB",
+    "instrumentUid": "1013bb09-a4a3-4f49-8cb1-38989981493b",
+    "lastPriceType": "LAST_PRICE_EXCHANGE"
+  }
+]

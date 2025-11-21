@@ -11,11 +11,14 @@ export const BondCard = () => {
   return (
     dataCommon.map(item => {
       return (
-        <div className={styles.container}>
+        <div className={styles.container} key={item.figi}>
           <div className={styles.header}>
-            <div className={styles.nameBond}>{item.name}</div>
+            <div>
+              <div className={styles.nameBond}>{item.name}</div>
+              <div className={styles.ticker}>{item.ticker}</div>
+            </div>
             <div className={styles.headerTop}>
-              <div>currentSum</div>
+              <div>{item.price}</div>
               <div>increase</div>
               <div>{item.nominal} ₽</div>
             </div>
@@ -26,7 +29,7 @@ export const BondCard = () => {
             </div>
           </div>
 
-          <CouponsList data={dataCommon} />
+          <CouponsList data={dataCommon} key={item.figi} />
         </div>
       )
     })

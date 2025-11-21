@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useStore } from '../../store/store'
 
 import { request } from '../../hooks/http.hook';
-import { _transformDataCoupons, _transformDataBonds } from '../../utils/transformData'
+import { _transformDataCoupons, _transformDataBonds, _transformDataLastPrices } from '../../utils/transformData'
 
 import styles from './header.module.scss'
 
@@ -16,25 +16,9 @@ import styles from './header.module.scss'
 export const Header = () => {
   const setDataBonds = useStore(state => state.setDataBonds)
   const setDataCoupons = useStore(state => state.setDataCoupons)
+  const setDataPrice = useStore(state => state.setDataPrice)
 
   const setConcatData = useStore(state => state.setConcatData)
-  const dataCommon = useStore(state => state.dataCommon)
-  // console.log(dataCommon)
-
-  // useEffect(() => {
-  //   Promise.all([
-  //     request('/dataCoupons.json').then(item => item.map(_transformDataCoupons)),
-  //     request('/dataBonds.json').then(item => item.map(_transformDataBonds))])
-  //     .then(([transformedCoupons, transformedBonds]) => {
-  //       setDataCoupons(transformedCoupons)
-  //       setDataBonds(transformedBonds)
-  //       setConcatData(dataBonds, dataCoupons)
-  //     })
-  //     .catch(error => {
-  //       console.log('Ошибка загрузки:', error)
-  //     })
-  // }, [request])
-
 
   const couponsQuery = useQuery({
     queryKey: ['coupons'],
@@ -47,8 +31,18 @@ export const Header = () => {
   const bondsQuery = useQuery({
     queryKey: ['bonds'],
     queryFn: async () => {
-      const data = await request('/dataBonds.json')
+      // const data = await request('/dataBonds.json')
+      const data = await request('http://localhost:3001/api/bonds/')
       return data.map(_transformDataBonds)
+    }
+  })
+
+  // TCS00A104XR2
+  const priceQuery = useQuery({
+    queryKey: ['price'],
+    queryFn: async () => {
+      const data = await request('/dataLast.json')
+      return data.map(_transformDataLastPrices)
     }
   })
 
@@ -56,15 +50,19 @@ export const Header = () => {
     if (!couponsQuery.isLoading && !bondsQuery.isLoading && couponsQuery.data && bondsQuery.data) {
       setDataBonds(bondsQuery.data)
       setDataCoupons(couponsQuery.data)
-      setConcatData(bondsQuery.data, couponsQuery.data)
+      setDataPrice(priceQuery.data)
+
+      setConcatData(bondsQuery.data, couponsQuery.data, priceQuery.data)
     }
   }, [
     couponsQuery.isLoading,
     bondsQuery.isLoading,
     couponsQuery.data,
     bondsQuery.data,
+    priceQuery.data,
     setDataCoupons,
     setDataBonds,
+    setDataPrice,
     setConcatData,
   ])
 

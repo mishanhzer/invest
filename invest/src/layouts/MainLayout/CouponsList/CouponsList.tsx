@@ -1,6 +1,9 @@
+import { useId } from "react";
+
 import styles from './couponsList.module.scss'
 
 export const CouponsList = ({ data }) => {
+  const couponId = useId()
   console.log(data)
   return (
     <div className={styles.container}>

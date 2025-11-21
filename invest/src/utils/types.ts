@@ -18,6 +18,12 @@ interface TypesNominal {
   currency: string
 }
 
+interface TypesBrand {
+  logoBaseColor: string
+  logoName: string
+  textColor: string
+}
+
 export interface TypesBonds {
   figi: string
   maturityDate: string
@@ -26,6 +32,22 @@ export interface TypesBonds {
   riskLevel: number
   sector: string
   ticker: string
+  brand: TypesBrand
+}
+
+interface TypesPrice {
+  units: string
+  nano: number
+}
+
+export interface TypesDataLastPrices {
+  classCode: string
+  figi: string
+  instrumentUid: string
+  lastPricesType: string
+  price: TypesPrice
+  ticker: string
+  time: string
 }
 
 export interface TypesSectorsBonds {

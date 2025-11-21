@@ -14,6 +14,12 @@ export const useStore = create<TypesStore>()(
       dataBonds: [],
       dataCoupons: [],
       dataCommon: [],
+
+      dataPrice: [],
+      setDataPrice: (dataPrice) => {
+        set({dataPrice})
+      },
+      
       setDataBonds: (dataBonds) => (
         set({dataBonds})
       ),
@@ -21,7 +27,7 @@ export const useStore = create<TypesStore>()(
         set({dataCoupons})
       },
 
-      setConcatData: (dataBonds, dataCoupons) => {
+      setConcatData: (dataBonds, dataCoupons, dataPrice) => {
         const dataCommon = dataBonds.filter(bond => dataCoupons.find(coupon => bond.figi === coupon.figi))
         .map(bond => {
           const couponWithRate =
@@ -31,7 +37,8 @@ export const useStore = create<TypesStore>()(
                 const rate = Math.round((rateData + Number.EPSILON) * 100) / 100
                 return { ...coupon, rate }
               })
-          return { ...bond, couponWithRate }
+          const price = dataPrice.find(price => bond.figi === price.figi)?.price
+          return { ...bond, couponWithRate, price }
         })
         
         set({dataCommon})

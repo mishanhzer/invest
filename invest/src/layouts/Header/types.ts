@@ -29,3 +29,18 @@ export interface TypesDataBonds {
   sector: string
   ticker: string
 }
+
+// interface TypesPrice {
+//   units: string
+//   nano: number
+// }
+
+// export interface TypesDataLastPrices {
+//   classCode: string
+//   figi: string
+//   instrumentId: string
+//   lastPricesType: string
+//   price: TypesPrice
+//   ticker: string
+//   time: string
+// }

@@ -1,0 +1,1 @@
+{"version":3,"file":"trades.js","sourceRoot":"","sources":["../../src/stream/trades.ts"],"names":[],"mappings":";;;AAAA;;;GAGG;AACH,uCAAuC;AAGvC,MAAa,YAAa,SAAQ,oBAAqD;IACrF;;OAEG;IACH,KAAK,CAAC,OAA4B;QAChC,iEAAiE;QACjE,MAAM,IAAI,GAAG,IAAI,CAAC,GAAG,CAAC,YAAY,CAAC,YAAY,CAAC,OAAO,CAAC,CAAC;QACzD,IAAI,CAAC,UAAU,CAAC,IAAI,CAAC,CAAC;IACxB,CAAC;CAGF;AAXD,oCAWC"}

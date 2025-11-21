@@ -2,9 +2,8 @@ import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClient } from './queryClient.js'
 
 import { Header } from "./layouts/Header/Header"
-
-
 import { BondCard } from './layouts/MainLayout/BondCard/BondCard.js'
+import { FindInstrument } from './layouts/MainLayout/FindInstrument/FindInstrument.js'
 
 import styles from './app.module.scss'
 
@@ -17,8 +16,8 @@ function App() {
       <div className={styles.app}>
         <div className={styles.content}>
           <Header />
-
-          <BondCard />
+          <FindInstrument />
+          {/* <BondCard /> */}
         </div>
       </div>
     </QueryClientProvider>
